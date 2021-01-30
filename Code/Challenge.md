@@ -25,7 +25,7 @@ public static void Main(string[] args)
       double changeDue = payment - purchase + 0.001;
       Console.WriteLine($"     Change Due: $ {changeDue.ToString("N2")}\n");
 
-      int changeInPennies = (int)(changeDue * 100.0);
+      int changeInPennies = (int) (changeDue * 100.0);
 
       // Forward
       // changeDue = GiveDenomination(changeDue, "       Twenties: ", 20.00);
@@ -79,11 +79,13 @@ private static double GetAmount(string prompt)
 ```cs
 private static double GiveDenomination(double currentChangeDue, string label, double denomination)
 {
-   int count = (int)(currentChangeDue / denomination);
+   int count = (int) (currentChangeDue / denomination);
+
    if (count > 0)
    {
       Console.WriteLine($"{label}{count}");
    }
+
    return currentChangeDue % denomination;
 } // end GiveDenomination( )
 ```
@@ -98,7 +100,7 @@ private static int GiveDenomination(int currentChangeDue, string label, int deno
       Console.WriteLine($"{label}{count}");
    }
 
-   return currentChangeDue / denomination;
+   return currentChangeDue % denomination;
 } // end GiveDenomination( )
 ```
 
@@ -106,7 +108,7 @@ private static int GiveDenomination(int currentChangeDue, string label, int deno
 private static int GiveDenomination(int currentChangeDue, string label, int denom, int nextDenom)
 {
    int amount = currentChangeDue % nextDenom;
-   int count = amount / denom;
+   int count  = amount / denom;
 
    if (count > 0)
    {
