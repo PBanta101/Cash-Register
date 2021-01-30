@@ -23,7 +23,7 @@ C# Code Progression
 + [Part 3](Part%203.md) - Conditionals (`if` statements)
 + [Part 4](Part%204.md) - Loops
 + [Part 5](Part%205.md) - Catch Errors (`try ` / `catch` / `finally`)
-+ [Challenge](Challenge.md) - Compute Denominations In Reverse
++ [Challenge](Challenge.md) - Compute Denominations In Reverse Order
 
 ---
 
