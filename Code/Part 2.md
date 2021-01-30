@@ -39,7 +39,7 @@ private static double GiveDenomination(double currentChangeDue, string label, do
 } // end GiveDenomination( )
 ```
 
-_**Shorter, but maybe less readable**_
+_**A shorter version of `GiveDenomination()`, but maybe less readable**_
 ```cs
 private static double GiveDenomination(double currentChangeDue, string label, double denomination)
 {
