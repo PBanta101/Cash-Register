@@ -1,7 +1,7 @@
 Challenge - Compute Denominations In Reverse Order
 ---
 
-**Note**: This solution gives a reasonable solution, but not an optimal solution.
+**Note**: This solution gives a reasonable answer, but not always an optimal answer.
 
 ```cs
 public static void Main(string[] args)
