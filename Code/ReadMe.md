@@ -1,3 +1,6 @@
+Cash Register
+===
+
 C# Code Progression
 ---
 
