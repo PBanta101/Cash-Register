@@ -6,14 +6,12 @@ The Cash Register program is an exercise in developing well-written, clean, thor
 + Compute **How Much Change Is Due**
 + Compute **How Many Of Each Denomination** should be given
 
-The solutions given here are an iterative exploration of how the application can be written in different ways using more and fundamental programming structures and techniques.
-The first iteration (part 1) uses only Sequence and Math.
-The second iteration (part 2) adds Methods.
-The third itration (part 3) adds Conditionals (`if` statements).
-The fourth iteration (part 4) adds Loops.
-The fifth iteration (part 5) adds Error Checking (`try` / `catch` / `finally`).
-
-
+The solutions given here are an iterative exploration of how the application can be written in different ways, starting with Sequence only, and then using more and more fundamental programming structures and techniques:
++ Sequence and Math
++ Methods
++ Conditionals (`if` statements)
++ Loops
++ Error Checking (`try` / `catch` / `finally`).
 
 ---
 
