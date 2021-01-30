@@ -1,4 +1,4 @@
-Challenge - Compute Denominations In Reverse
+Challenge - Compute Denominations In Reverse Order
 ---
 
 ```cs
