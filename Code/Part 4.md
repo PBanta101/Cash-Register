@@ -63,7 +63,7 @@ private static double GetAmount(string prompt)
 ```cs
 private static double GiveDenomination(double currentChangeDue, string label, double denomination)
 {
-   int count = (int)(currentChangeDue / denomination);
+   int count = (int) (currentChangeDue / denomination);
    if (count > 0)
    {
       Console.WriteLine($"{label}{count}");
