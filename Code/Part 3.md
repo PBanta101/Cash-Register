@@ -44,7 +44,7 @@ private static double GetAmount(string prompt)
       amount = 0.0;
    }
 
-return amount;
+   return amount;
 } // end GetAmount( )
 ```
 
