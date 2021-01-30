@@ -1,6 +1,12 @@
 Cash Register
 ===
 
+The Cash Register program is an exercise in developing well-written, clean, thorough code using some fundamental programming structures and techniques to solve a well-understood application.
+
+
+
+---
+
 C# Code Progression
 ---
 
