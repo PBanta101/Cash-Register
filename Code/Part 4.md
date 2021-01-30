@@ -27,12 +27,12 @@ public static void Main(string[] args)
 
       changeDue = GiveDenomination(changeDue, "       Twenties: ", 20.00);
       changeDue = GiveDenomination(changeDue, "           Tens: ", 10.00);
-      changeDue = GiveDenomination(changeDue, "          Fives: ", 5.00);
-      changeDue = GiveDenomination(changeDue, "           Ones: ", 1.00);
-      changeDue = GiveDenomination(changeDue, "       Quarters: ", 0.25);
-      changeDue = GiveDenomination(changeDue, "          Dimes: ", 0.10);
-      changeDue = GiveDenomination(changeDue, "        Nickels: ", 0.05);
-                  GiveDenomination(changeDue, "        Pennies: ", 0.01);
+      changeDue = GiveDenomination(changeDue, "          Fives: ",  5.00);
+      changeDue = GiveDenomination(changeDue, "           Ones: ",  1.00);
+      changeDue = GiveDenomination(changeDue, "       Quarters: ",  0.25);
+      changeDue = GiveDenomination(changeDue, "          Dimes: ",  0.10);
+      changeDue = GiveDenomination(changeDue, "        Nickels: ",  0.05);
+                  GiveDenomination(changeDue, "        Pennies: ",  0.01);
    }
 } // end Main( )
 ```
