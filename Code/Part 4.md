@@ -44,17 +44,15 @@ public static void Main(string[] args)
 ```cs
 private static double GetAmount(string prompt)
 {
-   double amount;
+   Console.Write(prompt);
+   double amount = double.Parse(Console.ReadLine());
 
-   do
+   while (amount <= 0.0)
    {
+      Console.WriteLine("The amount must be positive. Please re-enter.\n");
       Console.Write(prompt);
       amount = double.Parse(Console.ReadLine());
-      if (amount < 0.0)
-      {
-         Console.WriteLine("The amount must be positive. Please re-enter.\n");
-      }
-   } while (amount <= 0);
+   }
 
    return amount;
 } // end GetAmount( )
