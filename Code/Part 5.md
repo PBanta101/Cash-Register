@@ -5,19 +5,15 @@ Part 5 - Catch Errors (`try` / `catch` / `finally`)
 ```cs
 public static void Main(string[] args)
 {
-   double purchase;
-   double payment;
+   double purchase = GetAmount("Purchase Amount: $ ");
+   double payment  = GetAmount("Payment  Amount: $ ");
 
-   do
+   while (payment < purchase)
    {
+      Console.WriteLine("This payment isn't enough. Please re-enter.\n");
       purchase = GetAmount("Purchase Amount: $ ");
       payment  = GetAmount("Payment  Amount: $ ");
-
-      if (payment < purchase)
-      {
-         Console.WriteLine("This payment isn't enough. Please re-enter.\n");
-      }
-   } while (payment < purchase);
+   }
 
    Console.WriteLine();
 
@@ -32,12 +28,12 @@ public static void Main(string[] args)
 
       changeDue = GiveDenomination(changeDue, "       Twenties: ", 20.00);
       changeDue = GiveDenomination(changeDue, "           Tens: ", 10.00);
-      changeDue = GiveDenomination(changeDue, "          Fives: ", 5.00);
-      changeDue = GiveDenomination(changeDue, "           Ones: ", 1.00);
-      changeDue = GiveDenomination(changeDue, "       Quarters: ", 0.25);
-      changeDue = GiveDenomination(changeDue, "          Dimes: ", 0.10);
-      changeDue = GiveDenomination(changeDue, "        Nickels: ", 0.05);
-                  GiveDenomination(changeDue, "        Pennies: ", 0.01);
+      changeDue = GiveDenomination(changeDue, "          Fives: ",  5.00);
+      changeDue = GiveDenomination(changeDue, "           Ones: ",  1.00);
+      changeDue = GiveDenomination(changeDue, "       Quarters: ",  0.25);
+      changeDue = GiveDenomination(changeDue, "          Dimes: ",  0.10);
+      changeDue = GiveDenomination(changeDue, "        Nickels: ",  0.05);
+                  GiveDenomination(changeDue, "        Pennies: ",  0.01);
    }
 } // end Main( )
 ```
