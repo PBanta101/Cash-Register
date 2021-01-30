@@ -4,19 +4,15 @@ Part 4 - Loops
 ```cs
 public static void Main(string[] args)
 {
-   double purchase;
-   double payment;
+   double purchase = GetAmount("Purchase Amount: $ ");
+   double payment  = GetAmount("Payment  Amount: $ ");
 
-   do
+   while (payment < purchase)
    {
+      Console.WriteLine("This payment isn't enough. Please re-enter.\n");
       purchase = GetAmount("Purchase Amount: $ ");
       payment  = GetAmount("Payment  Amount: $ ");
-
-      if (payment < purchase)
-      {
-         Console.WriteLine("This payment isn't enough. Please re-enter.\n");
-      }
-   } while (payment < purchase);
+   }
 
    Console.WriteLine();
 
@@ -62,10 +58,12 @@ private static double GetAmount(string prompt)
 private static double GiveDenomination(double currentChangeDue, string label, double denomination)
 {
    int count = (int) (currentChangeDue / denomination);
+
    if (count > 0)
    {
       Console.WriteLine($"{label}{count}");
    }
+
    return currentChangeDue % denomination;
 } // end GiveDenomination( )
 ```
